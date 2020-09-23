@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #f4f4f4;
+  font-family: "Dank Mono";
+}
+
+.main-container {
+  display: flex;
+  background-color: #282c34;
+  height: 100vh;
+}
+
+.profile {
+  align-items: center;
+  background: #393e47;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px;
+  width: 25%;
+  position: fixed;
+  height: 100vh;
+}
+
+.profile-image {
+  background-image: url();
+  padding: 130px;
+  background-color: grey;
+  border-radius: 24px;
+}
+
+.profile-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-contact {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.profile-contact > ul {
+  list-style: none;
+}
+
+.profile-contact > ul > li {
+  margin: 8px 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a:hover {
+  color: #627394;
+}
+
+.profile-title {
+  margin-bottom: 35px;
+  font-style: italic;
+  font-size: 1.125rem;
+  align-self: center;
+}
