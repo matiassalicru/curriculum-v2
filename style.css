@@ -3,34 +3,44 @@
   padding: 0;
   color: #f4f4f4;
   font-family: "Dank Mono";
+  background-color: #282c34;
 }
 
 .main-container {
   display: flex;
   justify-content: space-between;
-  background-color: #282c34;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
 .profile {
   align-items: center;
-  background: #393e47;
+  background-color: #393e47;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 60px;
+  justify-content: space-around;
+  padding: 20px;
   width: 25%;
   position: fixed;
   height: 100vh;
+  border-right: 1px solid #7c7c7c;
+
 }
 
 .profile-image {
-  background-image: url();
-  padding: 130px;
+  object-fit: contain;
   background-color: grey;
+  box-sizing: border-box;
+  width: 65%;
+  height: 40%;
+}
+
+.profile-image img{
+  width: 100%;
+  height: 100%;
   border-radius: 24px;
+
 }
 
 .profile-description {
@@ -38,6 +48,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-color: #393e47;  
+}
+
+.profile-description p {
+  background-color: #393e47;
+
 }
 
 .profile-contact {
@@ -45,19 +61,27 @@
   flex-direction: column;
   align-self: flex-start;
   width: 100%;
+  background-color: #393e47;
+
 }
 
 .profile-contact > ul {
   list-style: none;
+  background-color: #393e47;
+
 }
 
 .profile-contact > ul > li {
   margin: 8px 0;
+  background-color: #393e47;
+
 }
 
 a {
   text-decoration: none;
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #393e47;
+
 }
 
 a:hover {
@@ -65,21 +89,61 @@ a:hover {
 }
 
 .profile-title {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-style: italic;
   font-size: 1.125rem;
   align-self: center;
+  background-color: #393e47;
+
 }
 
 .main-content{
-  margin-left: 25%;
   display: flex;
+  flex-direction: column;
+  margin-left: 25%;
   width: 75%;
-  border: 2px solid #f5f5f5;
   padding: 20px;
 }
 
 .title {
   font-size: 2rem;
   font-style: italic;
+}
+
+.main-title{
+  font-style: italic;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+
+}
+
+.list{
+  list-style: none;
+}
+
+.list-border{
+  border-left: 1px solid #fff;
+  margin-left: 30px;
+}
+
+.list-item{
+  width: 90%;
+  margin: 20px;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+
+.list-item_title{
+  font-style: italic;
+  margin-bottom: 20px;
+  color: rgb(168, 115, 192);
+}
+
+.list-item_description{
+  margin: 0 0 25px 25px;
+}
+
+.show{
+  display: none;
 }
