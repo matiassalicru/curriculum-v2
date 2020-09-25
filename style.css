@@ -98,11 +98,31 @@ a:hover {
   padding: 20px;
 }
 
+.english-btn{
+  width: 100%;
+  background-color: #222b3a;
+  margin: -20px !important;
+  padding: 15px;
+}
+
+.btn:hover{
+  color: #627394;
+}
+
+.btn{
+  background: none;
+  padding: 8px 10px;
+  outline: none;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+cursor: pointer;
+}
+
 .title {
   font-size: 2rem;
   font-style: italic;
   font-family:Helvetica;
   letter-spacing: 1px;
+  margin-top: 40px;
 }
 
 .main-title {
@@ -137,6 +157,8 @@ a:hover {
 .list-item_description {
   margin: 0 0 25px 25px;
 }
+
+
 
 @media screen and (max-width: 780px) {
   .main-container{
