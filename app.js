@@ -18,13 +18,3 @@ experiencias.addEventListener("click", showExp);
 formacion.addEventListener("click", showExp);
 cursos.addEventListener("click", showExp);
 habilidades.addEventListener("click", showExp);
-
-btn.addEventListener("click", (e) => {
-  e.preventDefault();
-  let location = window.location.href;
-  if (location.includes("english")) {
-    window.location = "/index.html";
-  } else if (location.includes("index")) {
-    window.location = "/english.html";
-  }
-});
