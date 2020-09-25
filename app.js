@@ -3,16 +3,15 @@ const formacion = document.querySelector("#formacion");
 const cursos = document.querySelector("#cursos");
 const habilidades = document.querySelector("#habilidades");
 
-
-
 function showExp(e) {
     let target = e.target.nextElementSibling;
 
-    if(target.style.display === 'none'){
-        target.style.display = "block";
-    } else {
+    if(target.style.display === 'flex'){
         target.style.display = "none";
+    } else {
+        target.style.display = "flex";
     }
+
 }
 
 experiencias.addEventListener('click', showExp);

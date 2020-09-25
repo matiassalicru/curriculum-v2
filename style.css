@@ -1,9 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  color: #f4f4f4;
-  font-family: "Dank Mono";
-  background-color: #282c34;
+  color: #dfdfdf;
+  font-family: "Fira Code";
+}
+
+body {
+  /* background-color: #393e47; */
+  background-color: #364156;
+  
 }
 
 .main-container {
@@ -13,34 +18,34 @@
   position: relative;
 }
 
+  /* background-color: #393e47; */
+
+
 .profile {
-  align-items: center;
-  background-color: #393e47;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  padding: 20px;
+  background-color: #222b3a;
+  box-sizing: border-box;
+  padding: 15px;
   width: 25%;
   position: fixed;
-  height: 100vh;
-  border-right: 1px solid #7c7c7c;
-
+  height: 100%;
+  border-right: 1px solid #e2e2e2;
 }
 
 .profile-image {
-  object-fit: contain;
-  background-color: grey;
-  box-sizing: border-box;
-  width: 65%;
-  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
-.profile-image img{
-  width: 100%;
-  height: 100%;
-  border-radius: 24px;
-
+.profile-image img {
+  margin-top: 20px;
+  width: 70%;
+  border-radius: 60%;
 }
 
 .profile-description {
@@ -48,12 +53,8 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #393e47;  
-}
-
-.profile-description p {
-  background-color: #393e47;
-
+  box-sizing: border-box;
+  margin: 10px 0;
 }
 
 .profile-contact {
@@ -61,27 +62,21 @@
   flex-direction: column;
   align-self: flex-start;
   width: 100%;
-  background-color: #393e47;
-
+  margin: 20px 0;
 }
 
 .profile-contact > ul {
+  height: fit-content;
   list-style: none;
-  background-color: #393e47;
-
 }
 
 .profile-contact > ul > li {
-  margin: 8px 0;
-  background-color: #393e47;
-
+  margin: 6px 0;
 }
 
 a {
   text-decoration: none;
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-  background-color: #393e47;
-
 }
 
 a:hover {
@@ -89,15 +84,13 @@ a:hover {
 }
 
 .profile-title {
-  margin-bottom: 25px;
+  margin: 25px;
   font-style: italic;
   font-size: 1.125rem;
   align-self: center;
-  background-color: #393e47;
-
 }
 
-.main-content{
+.main-content {
   display: flex;
   flex-direction: column;
   margin-left: 25%;
@@ -108,42 +101,88 @@ a:hover {
 .title {
   font-size: 2rem;
   font-style: italic;
+  font-family:Helvetica;
+  letter-spacing: 1px;
 }
 
-.main-title{
+.main-title {
   font-style: italic;
   margin-top: 20px;
   cursor: pointer;
   font-size: 1.2rem;
-
 }
 
-.list{
+.list {
+  display: none;
   list-style: none;
 }
 
-.list-border{
-  border-left: 1px solid #fff;
+.list-border {
+  border-left: 1px solid rgb(90, 90, 90);
   margin-left: 30px;
 }
 
-.list-item{
+.list-item {
   width: 90%;
   margin: 20px;
-  border-bottom: 1px solid rgb(206, 206, 206);
+  border-bottom: 1px solid rgb(90, 90, 90);
 }
 
-
-.list-item_title{
+.list-item_title {
   font-style: italic;
   margin-bottom: 20px;
   color: rgb(168, 115, 192);
 }
 
-.list-item_description{
+.list-item_description {
   margin: 0 0 25px 25px;
 }
 
-.show{
-  display: none;
+@media screen and (max-width: 780px) {
+  .main-container{
+    flex-direction: column;
+  }
+
+  .profile {
+  justify-content: space-around;
+  width: 100%;
+  position: initial;
+  height: 50%;
+  border-right: 0px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.main-content{
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
+}
+
+
+.title {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.list-border {
+  border-left: 0px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.list-item {
+  width: 95%;
+  margin: 15px;
+  border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+.main-title {
+  font-style: initial;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
 }
