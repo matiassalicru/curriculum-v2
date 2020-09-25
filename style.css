@@ -206,5 +206,23 @@ cursor: pointer;
   font-weight: 500;
 }
 
+.english-btn{
+  
+  margin: -15px !important;
+  font-size: 0.8rem;
+}
+
+.english-btn p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  margin-top : 15px;
+  padding: 5px;
+}
+
 
 }
