@@ -130,6 +130,7 @@ cursor: pointer;
   margin-top: 20px;
   cursor: pointer;
   font-size: 1.2rem;
+  color: #c883e7;
 }
 
 .list {
@@ -151,7 +152,7 @@ cursor: pointer;
 .list-item_title {
   font-style: italic;
   margin-bottom: 20px;
-  color: rgb(168, 115, 192);
+  color: rgb(207, 176, 214);
 }
 
 .list-item_description {
