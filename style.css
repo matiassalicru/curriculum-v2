@@ -184,6 +184,16 @@ footer>p>span{
   color: rgb(207, 176, 214);
 }
 
+@media screen and (max-width: 1100px) {
+  .profile-description{
+    font-size: 0.8rem;
+  }
+
+  .profile-contact{
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 780px) {
   .main-container {
     flex-direction: column;
@@ -196,6 +206,14 @@ footer>p>span{
     height: 50%;
     border-right: 0px;
     border-bottom: 1px solid #c4c4c4;
+  }
+
+  .profile-description{
+    font-size: 1rem;
+  }
+
+  .profile-contact{
+    font-size: 1rem;
   }
 
   .main-content {
