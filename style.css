@@ -172,6 +172,18 @@ a:hover {
   margin-right: 15px;
 }
 
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+footer>p>span{
+  font-style: italic;
+  color: rgb(207, 176, 214);
+}
+
 @media screen and (max-width: 780px) {
   .main-container {
     flex-direction: column;
